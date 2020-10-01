@@ -8,6 +8,7 @@ PWD     := $(shell pwd)
 all :
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
 	gcc $(obj) -o $(obj-out)
+	
 clean :
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean
                             
